@@ -3,7 +3,7 @@ export const initialState = {
   editing: false
 };
 
-export function reducer(state, action) {
+export function reducer(state = initialState, action) {
   switch (action.type) {
     case "TOGGLE_EDITING":
       return {
