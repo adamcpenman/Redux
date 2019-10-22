@@ -1,3 +1,5 @@
+import { TOGGLE_EDITING, UPDATE_TITLE } from "../actions/title";
+
 export const initialState = {
   title: "The Reducer Pattern",
   editing: false
@@ -5,12 +7,13 @@ export const initialState = {
 
 export function reducer(state = initialState, action) {
   switch (action.type) {
-    case "TOGGLE_EDITING":
+    // case "TOGGLE_EDITING":
+    case TOGGLE_EDITING:
       return {
         ...state,
         editing: !state.editing
       };
-    case "UPDATE_TITLE":
+    case UPDATE_TITLE:
       return {
         ...state,
         title: action.payload
