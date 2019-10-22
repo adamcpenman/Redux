@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { reducer } from "./reducers/title";
 import App from "./components/App";
 
-//global JS object
+//global JS object GLOBAL state
 const store = createStore(reducer);
 
 const rootElement = document.getElementById("root");
